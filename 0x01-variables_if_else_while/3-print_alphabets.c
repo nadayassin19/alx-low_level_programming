@@ -9,19 +9,14 @@
 
 int main(void)
 {
-	char lowercase[26] = "abcdefghijklmnopqrstuvwxyz";
-	char uppercase[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alphabet[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
 
-	for (; i < 26; i++)
+	for (; i < 52; i++)
 	{
-		putchar(lowercase[i]);
+		putchar(alphabet[i]);
 	}
 
-	for (; i < 26; i++)
-	{
-		putchar(uppercase[i]);
-	}
 	putchar ('\n');
 	return (0);
 }
