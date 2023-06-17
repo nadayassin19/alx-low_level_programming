@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	int i = 0;
+	int i;
 	char hexAlph[6] = "abcdef";
 
-	for (; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		putchar(i);
 	}
 
-	for (; i < 6; i++)
+	for (i = 0; i < 6; i++)
 	{
 		putchar(hexAlph[i]);
 	}
