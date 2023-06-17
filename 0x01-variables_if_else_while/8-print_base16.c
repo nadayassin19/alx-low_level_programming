@@ -17,7 +17,7 @@ int main(void)
 		putchar(i);
 	}
 
-	for (; i < 6; i++)
+	for (i = 0; i < 6; i++)
 	{
 		putchar(hexAlph[i]);
 	}
