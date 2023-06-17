@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i;
+	int i = 0;
 	char hexAlph[6] = "abcdef";
 
 	while (i < 10)
@@ -18,7 +18,7 @@ int main(void)
 		i++;
 	}
 
-	for (i = 0; i < 6; i++)
+	for (; i < 6; i++)
 	{
 		putchar(hexAlph[i]);
 	}
