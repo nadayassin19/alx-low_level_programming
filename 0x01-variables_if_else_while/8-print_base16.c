@@ -12,9 +12,10 @@ int main(void)
 	int i;
 	char hexAlph[6] = "abcdef";
 
-	for (i = 0; i < 10; i++)
+	while (i < 10)
 	{
 		putchar(i);
+		i++;
 	}
 
 	for (i = 0; i < 6; i++)
