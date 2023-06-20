@@ -1,3 +1,6 @@
-#include "_putchar.c"
+#ifndef MAIN_H_
+#define MAIN_H
 
-int _putchar (char);
+int _putchar(char);
+
+#endif
