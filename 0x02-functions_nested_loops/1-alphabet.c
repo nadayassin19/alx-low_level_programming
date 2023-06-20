@@ -7,26 +7,12 @@
 
 void print_alphabet(void)
 {
-	char alph[] = "abcdefghijklmnopqrstuvwxyz";
-	int length = 26;
-	int i = 0;
+	int i = 97; /*the ASCII value of a*/
 
-	for (; i < length; i++)
+	for (; i < 123; i++)
 	{
-		_putchar(alph[i]);
+		_putchar('i');
 	}
-}
-
-/**
- * main - Entry point & writes the alphabet
- * in lowercase
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	print_alphabet();
 	_putchar('\n');
-	return (0);
+	print_alphabet();
 }
