@@ -10,7 +10,7 @@ int main(void)
 {
 	char sent[] = "_putchar";
 	/*to get the length of a string*/
-	int l = sizeof(sent) / sizeof(sent[1]);
+	int l = (sizeof(sent) / sizeof(sent[0])) - 1;
 	int i = 0;
 
 	for (; i < l; i++)
