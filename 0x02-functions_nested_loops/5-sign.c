@@ -1,31 +1,31 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
+ * print_sign - checks the sign of a given number.
  *
- * @n: the number to be checked.
+ * Return: 1 if the number is +ve
+ * 0 if the number is 0
+ * -1 if the number is -ve
  *
- * Return: 1 when +ve
- *	: 0 when 0
- *	: -1 when -ve
+ * @n: the given number to be checked.
  */
 
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');
+		_putchar(43);
 		return (1);
 	}
 	if (n == 0)
 	{
-		_putchar('0');
+		_putchar(48);
 		return (0);
 	}
 	if (n < 0)
 	{
-		_putchar('-');
+		_putchar(45);
 		return (-1);
 	}
-	_putchar('\n');
+	return ('\n');
 }
