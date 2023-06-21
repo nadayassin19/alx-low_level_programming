@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void times_table - prints the 9 times table, starting with 0.
+ * times_table - prints the 9 times table, starting with 0.
  *
  * Return: +ve integer.
  */
@@ -13,6 +13,7 @@ void times_table(void)
 	for (; i <= 9; i++)
 	{
 		int j = 0;
+
 		for (; j <= 9; j++)
 		{
 			_putchar(i * j);
