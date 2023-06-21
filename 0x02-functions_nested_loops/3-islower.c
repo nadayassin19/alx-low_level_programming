@@ -1,19 +1,5 @@
 #include "main.h"
 
-/**
- * main - Entry poin & implements _islower func
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	int c;
-
-	c = 100;
-	_islower(c);
-	return (0);
-}
 
 /**
  * _islower - a func used to check whether the letter

@@ -1,16 +1,5 @@
 #include "main.h"
 
-/**
- * main - Entry point & implements the print_alphabet func
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 /**
  * print_alphabet - Is used to print the alphabet
