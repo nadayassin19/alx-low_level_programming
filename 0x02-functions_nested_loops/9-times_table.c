@@ -8,13 +8,13 @@
 
 void times_table(void)
 {
-	int i = 0;
+	int i = 48;
 
-	for (; i <= 9; i++)
+	for (; i <= 57; i++)
 	{
-		int j = 0;
+		int j = 48;
 
-		for (; j <= 9; j++)
+		for (; j <= 57; j++)
 		{
 			_putchar(i * j);
 			_putchar(',');
