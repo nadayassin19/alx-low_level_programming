@@ -1,23 +1,34 @@
 #include "main.h"
 
 /**
- * _islower - Shows 1 if the input is a
- * lowercase character. Another cases, shows
- * 0
+ * main - Entry poin & implements _islower func
  *
- * @c: The character in ASCII code
- *
- * Return: 1 for lowercase character. 0 for the rest.
+ * Return: Always 0 (Success)
  */
+
+int main(void)
+{
+	int c;
+
+	c = 100;
+	_islower(c);
+	return (0);
+}
+
+/**
+ * _islower - a func used to check whether the letter
+ * is lowercase or uppercase
+ *
+ * Return: 1 (Success) or 0 (false)
+ *
+ * @c: the character in ASCII code
+ */
+
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 	_putchar('\n');
 }
