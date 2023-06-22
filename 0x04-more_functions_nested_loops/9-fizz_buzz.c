@@ -1,37 +1,34 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Entry point & prints numbers from 1 to 100.
+ * main - Entry point & prints Buzz each numbers of 3 and 5.
  *
  * Return: Always 0 (Success).
  */
 
 int main(void)
 {
-	int i;
+	int n;
 
-	i = 1;
-	for (; i <= 100; i++)
+	for (n = 1; n <= 100; n++)
 	{
-		if (i % 3 == 0)
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("Fizz ");
+			printf(" FizzBuzz");
 		}
-		if (i % 5 == 0)
+		else if (n % 3 == 0)
 		{
-			printf("Buzz ");
+			printf(" Fizz");
 		}
-		if (i % 3 == 0 && i % 5 == 0)
+		else if (n % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf(" Buzz");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf(" %d", n);
 		}
 	}
 	printf("\n");
-
 	return (0);
 }
