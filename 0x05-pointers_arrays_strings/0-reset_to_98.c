@@ -12,6 +12,5 @@
 
 void reset_to_98(int *n)
 {
-	printf("The value of n is %p\n", n);
 	*n = 98;
 }
