@@ -15,9 +15,14 @@ void _puts(char *str)
 	int i;
 
 	i = 0;
-	for (; i >= 0; i++)
+	while (i >= 0)
 	{
+		/*if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}*/
 		_putchar(str[i]);
+		i++;
 	}
-	_putchar('\n');
 }
