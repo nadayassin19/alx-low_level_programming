@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _strlen - a func give the length of str.
+ * _strlen - a func give the length of str.
  *
  * Return: the length of a str in int.
  *
@@ -13,7 +13,7 @@ int _strlen(char *s)
 	int i;
 
 	i = 0;
-	for (; s[i] != '\0'; i++ )
+	for (; s[i] != '\0'; i++)
 	{
 
 	}
