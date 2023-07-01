@@ -12,6 +12,12 @@
 
 void _puts(char *str)
 {
-	_putchar(str);
+	int i;
+
+	i = 0;
+	for (; i != '\0'; i++)
+	{
+		_putchar(i);
+	}
 	_putchar('\n');
 }
