@@ -12,20 +12,21 @@
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int i, j, len;
+	char temp;
 
-	while (i >= 0)
+	i = 0;
+	j = 0;
+	len = _strlen(s);
+	j = len - 1;
+	while (i < j)
 	{
-		if (s[i] == '\0')
-		{
-			break;
-		}
+		temp = s[j];
+		s[j] = s[i];
+		s[i] = temp;
 		i++;
+		j--;
 	}
-
-	for (i--; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
+	_putchar(s);
 	_putchar('\n');
 }
