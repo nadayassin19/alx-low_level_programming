@@ -1,31 +1,6 @@
 #include "lists.h"
 
 /**
- * free_linkedlist - frees a linked list
- *
- * @head: head of a list.
- *
- * Return: nothing.
- */
-
-void free_linkedlist(linkedlist_t **head)
-{
-	linkedlist_t *temp;
-	linkedlist_t *temp2;
-
-	if (head != NULL)
-	{
-		temp2 = *head;
-		while ((temp = temp2) != NULL)
-		{
-			temp2 = temp2->next;
-			free(temp);
-		}
-		*head = NULL;
-	}
-}
-
-/**
  * print_listint_safe - prints a linked list.
  *
  * @head: head of a list.
@@ -36,12 +11,12 @@ void free_linkedlist(linkedlist_t **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t n_nodes = 0;
-	linkedlist_t *hptr, *new, *add;
+	list_t *hptr, *new, *add;
 
 	hptr = NULL;
 	while (head != NULL)
 	{
-		new = malloc(sizeof(linkedlist_t));
+		new = malloc(sizeof(list_t));
 
 		if (new == NULL)
 			exit(98);
