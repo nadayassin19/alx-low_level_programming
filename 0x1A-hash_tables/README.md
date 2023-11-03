@@ -1,0 +1,1 @@
+This is read me file for the project 0x1A. C - Hash tables in ALX SWE program.
