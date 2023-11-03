@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - prints the keys and values of the hash table
+ *hash_table_print - prints the keys and values of the hash table
  *
- * @ht: pointer to the hash table
- * 
- * Return: nothing.
+ *@ht: pointer to the hash table
+ *
+ *Return: nothing.
  */
 void hash_table_print(const hash_table_t *ht)
 {
